@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan} from '@fortawesome/free-solid-svg-icons';
 import { useLoaderData } from 'react-router-dom';
-import Review from '../ReviewCart/Review';
+import Review from '../Review/Review';
 import { Alert } from 'bootstrap';
 const Quiz = () => {
     const quizData = useLoaderData();
