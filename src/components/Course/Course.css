@@ -1,0 +1,59 @@
+.course{
+    position: relative;
+    max-width: 250px;
+    margin-bottom: 30px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+}
+.course-info{
+    padding: 7px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+.course-info img{
+    background-color: #000000;
+}
+.course img{
+    height: 236px;
+    width: 236px;
+    left: 7px;
+    top: 8px;
+    border-radius: 8px;
+}
+.course .name{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    margin: 0;
+    margin-top: 12px;
+}
+.course .total{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    margin: 0;
+    margin-top: 11px;
+}
+.course .startQuiz{
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 12px 17px;
+    background: #000000;
+    color: #fff;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+.course .startQuiz a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.course .fa-cart-shopping{
+    margin-left: 5px;
+}
