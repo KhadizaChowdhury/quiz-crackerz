@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layouts/Main';
 import Quiz from './components/Quiz/Quiz'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Blog from './components/Blog/Blog';
+import Statistics from './components/Statistics/Statistics';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,15 +20,23 @@ function App() {
           element:  <Courses></Courses>
         },
         {
-          path:"/:id",
+          path:"/topics/",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
+          element:  <Courses></Courses>
+        },
+        {
+          path:"/topics/:id",
           loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
           element: <Quiz></Quiz>
         },
-        // {
-        //   path:"/order",
-        //   loader: productsAndCartLoader,
-        //   element:  <Order></Order>
-        // }
+        {
+          path:"/statistics",
+          element:  <Statistics></Statistics>
+        },
+        {
+          path:"/blog",
+          element:  <Blog></Blog>
+        }
       ]
     }
 ]);

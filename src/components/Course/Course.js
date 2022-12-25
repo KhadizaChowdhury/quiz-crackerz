@@ -18,7 +18,7 @@ const Course = (props) => {
                 <p className='total'>Total Question: {total}</p>
                 {
                     <div className='startQuiz'>
-                        <Link to={`../${id}`} area-label='view Item'>Start Quiz</Link>
+                        <Link to={`../topics/${id}`} area-label='view Item'>Start Quiz</Link>
                     </div>
                 }
             </div>
