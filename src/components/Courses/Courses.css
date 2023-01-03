@@ -1,8 +1,32 @@
-.shop_cont{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 40px;
-}.courses{
+.scn_1{ 
+    background-image: url(https://khadizachowdhury.com/Library/assets/img/home-section1_bg.jpg);
+    display: inline-block;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.scn_1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+.hero_text{
+    color: #fff;
+}
+.courses{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;

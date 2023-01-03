@@ -1,6 +1,6 @@
 .course{
     position: relative;
-    max-width: 250px;
+    max-width: 330px;
     margin-bottom: 30px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
@@ -14,8 +14,9 @@
     background-color: #000000;
 }
 .course img{
-    height: 236px;
-    width: 236px;
+    width: 312px;
+    height: 285px;
+    object-fit: cover;
     left: 7px;
     top: 8px;
     border-radius: 8px;

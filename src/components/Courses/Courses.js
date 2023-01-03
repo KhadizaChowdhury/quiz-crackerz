@@ -1,4 +1,4 @@
-import {useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import Course from '../Course/Course';
 import './Courses.css'
 
@@ -8,20 +8,27 @@ const Courses = () => {
 
     return (
         <div className="shop_cont">
-            <div>
-                <h1>All Courses: {courses.length}</h1>
-                <div className='courses'>
-                    {
-                        courses.map(course => <Course
-                            course={course}
-                            // unique key
-                            key={course.id}
-                            >
-                        </Course>)
-                    }
+            <section className="scn_1">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="hero_text text-center">
+                                <h1>Welcome to <span>Virtual Course</span></h1>
+                                <h4>We are offering {courses.length} Courses for you!</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
+            </section>
+            <div className='container courses mt-5'>
+                {
+                    courses.map(course => <Course
+                        course={course}
+                        // unique key
+                        key={course.id}
+                    >
+                    </Course>)
+                }
             </div>
         </div>
     );
