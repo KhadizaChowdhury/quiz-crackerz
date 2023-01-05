@@ -11,10 +11,8 @@ const Statistics = () => {
 
     return (
         <div className='container m-auto chart my-5'>
-            <ResponsiveContainer minWidth={250} minHeight={300}>
+            <ResponsiveContainer minWidth={260} minHeight={250}>
             <LineChart
-                width={750}
-                height={320}
                 data={courses}
                 margin={{
                     top: 5,
