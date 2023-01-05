@@ -20,7 +20,7 @@ const Courses = () => {
                     </div>
                 </div>
             </section>
-            <div className='container courses mt-5'>
+            <div className='container courses m-auto mt-5'>
                 {
                     courses.map(course => <Course
                         course={course}

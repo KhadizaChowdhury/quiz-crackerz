@@ -6,7 +6,7 @@ const Course = (props) => {
     const { id, logo, name, total } = course;
 
     return (
-        <div className='course'>
+        <div className='course m-auto'>
             {/* <p>{id}</p> */}
             <div className='course-info'>
                 <div className='img'>

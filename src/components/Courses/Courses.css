@@ -1,3 +1,6 @@
+.shop_cont{
+    overflow: hidden;
+}
 .scn_1{ 
     background-image: url(https://khadizachowdhury.com/Library/assets/img/home-section1_bg.jpg);
     display: inline-block;
@@ -27,30 +30,44 @@
     color: #fff;
 }
 .courses{
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
+.course img {
+    width: 100%;
+}
 
-@media (max-width:991px)  {
+@media (max-width:992px)  {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-    .shop_cont{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 40px;
-    }.courses{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    .course {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    .course img {
+        height: 200px;
+        object-fit: cover;
     }
 }
-@media (max-width:667px)  {
-    /* smartphones, Android phones, landscape iPhone */
-    .shop_cont{
+
+@media (max-width:768px)  {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .courses{
+        max-width: 720px;
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }.courses{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+    .course {
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:460px)  {
+    /* smartphones, Android phones, landscape iPhone */
+    .courses{
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
