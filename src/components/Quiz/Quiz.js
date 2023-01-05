@@ -26,7 +26,7 @@ const Quiz = () => {
                     </div>
                 </div>
             </section>
-            <div className='container mt-5 w-50'>
+            <div className='container mt-5 col col-lg-6 col-md-8 mx-auto'>
                 {
                     questions.map(quizQ => <Review
                         key={quizQ.id}

@@ -39,7 +39,7 @@ const Review = (props) => {
     }
 
     return (
-        <div className='quiz-item py-3'>
+        <div className='quiz-item py-3 w-100'>
             <Card>
                 <Card.Header className="d-flex  justify-content-between p-4 align-items-center">
                     <div>
