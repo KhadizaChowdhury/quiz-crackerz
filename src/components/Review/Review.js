@@ -13,7 +13,7 @@ const Review = (props) => {
 
     const CustomToast = () => (
         <div>
-            <p>ID: {id},</p>
+            <p>Q: {question},</p>
             <p>Ans: {correctAnswer}</p>
         </div>
     );
@@ -43,11 +43,13 @@ const Review = (props) => {
             <Card>
                 <Card.Header className="d-flex  justify-content-between p-4 align-items-center">
                     <div>
-                    <h6>Q: {question}</h6>
+                        <h6>Q: {question}</h6>
                     </div>
                     <div className="d-flex justify-content-end">
-                    <FontAwesomeIcon onClick={() => correctAn(correctAnswer)} icon={faEye} />
-                    <ToastContainer autoClose={10000} /></div>
+                        <button onClick={() => correctAn(correctAnswer)} type="button" class="btn btn-secondary">
+                            <FontAwesomeIcon icon={faEye} />
+                        </button>
+                        <ToastContainer autoClose={10000} /></div>
                 </Card.Header>
                 <form onSubmit={handleSubmit}>
                     {options.map(option =>
