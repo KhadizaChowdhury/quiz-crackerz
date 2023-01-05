@@ -1,3 +1,15 @@
+# Project Name: Virtual Quiz
+
+# Live Site:
+    https://gilded-eclair-6b6011.netlify.app/
+
+# Projects Details:
+
+    It's a simple Quiz website using React Js which Includes--
+ 1. Quiz data loaded from API
+ 2. Charts to show quiz total using Recharts
+ 3. A Blog Page
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
